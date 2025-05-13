@@ -1,5 +1,5 @@
 import { useHappyHourStore } from '../store/happy-hour-store'
-import { Button } from '../components/ui/button'
+import { Button } from '../components/ui/Button'
 import { formatCurrency } from '../lib/utils'
 import { Share2, Download } from 'lucide-react'
 

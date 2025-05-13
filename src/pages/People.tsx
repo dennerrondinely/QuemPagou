@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useHappyHourStore } from '../store/happy-hour-store'
-import { Button } from '../components/ui/button'
+import { Button } from '../components/ui/Button'
 import { Input } from '../components/ui/input'
 import { formatCurrency } from '../lib/utils'
 import { Trash2, UserPlus } from 'lucide-react'
