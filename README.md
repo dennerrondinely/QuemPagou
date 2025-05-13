@@ -31,8 +31,10 @@ QuemPagou é um aplicativo web mobile para facilitar a divisão de contas em hap
    cd QuemPagou
    ```
 
-2. **Instale as dependências:**
+2. **Instale as dependências (recomendado usar pnpm):**
    ```bash
+   pnpm install
+   # ou
    npm install
    # ou
    yarn install
@@ -40,6 +42,8 @@ QuemPagou é um aplicativo web mobile para facilitar a divisão de contas em hap
 
 3. **Rode o projeto localmente:**
    ```bash
+   pnpm dev
+   # ou
    npm run dev
    # ou
    yarn dev
