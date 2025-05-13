@@ -18,7 +18,7 @@ export function Result() {
   }
 
   const handleShare = async () => {
-    const text = `SplitCheers - ${currentHappyHour.name}\n\n` +
+    const text = `QuemPagou - ${currentHappyHour.name}\n\n` +
       currentHappyHour.people.map(person => 
         `${person.name}: ${formatCurrency(calculatePersonTotal(person.id))}`
       ).join('\n') + '\n\n' +
@@ -27,7 +27,7 @@ export function Result() {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: `SplitCheers - ${currentHappyHour.name}`,
+          title: `QuemPagou - ${currentHappyHour.name}`,
           text
         })
       } catch (error) {
@@ -40,7 +40,7 @@ export function Result() {
   }
 
   const handleDownload = () => {
-    const text = `SplitCheers - ${currentHappyHour.name}\n\n` +
+    const text = `QuemPagou - ${currentHappyHour.name}\n\n` +
       currentHappyHour.people.map(person => 
         `${person.name}: ${formatCurrency(calculatePersonTotal(person.id))}`
       ).join('\n') + '\n\n' +
@@ -50,7 +50,7 @@ export function Result() {
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = `splitcheers-${currentHappyHour.name.toLowerCase().replace(/\s+/g, '-')}.txt`
+    a.download = `QuemPagou-${currentHappyHour.name.toLowerCase().replace(/\s+/g, '-')}.txt`
     document.body.appendChild(a)
     a.click()
     document.body.removeChild(a)

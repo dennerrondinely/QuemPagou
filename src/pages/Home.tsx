@@ -28,7 +28,7 @@ export function Home() {
   if (!currentHappyHour) {
     return (
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-4">Bem-vindo ao SplitCheers!</h1>
+        <h1 className="text-2xl font-bold mb-4">Bem-vindo ao QuemPagou!</h1>
         <p className="text-muted-foreground mb-4">
           Comece adicionando pessoas e produtos para dividir a conta do happy hour.
         </p>
