@@ -1,5 +1,6 @@
 {
-  "name": "my-vue-app",
+  "name": "quempagou",
+  "description": "Aplicativo web para dividir contas de happy hour, bares e restaurantes de forma simples.",
   "private": true,
   "version": "0.0.0",
   "type": "module",

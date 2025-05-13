@@ -1,54 +1,70 @@
-# React + TypeScript + Vite
+![Logo do QuemPagou](./public/logo.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# QuemPagou
 
-Currently, two official plugins are available:
+QuemPagou é um aplicativo web mobile para facilitar a divisão de contas em happy hours, bares e restaurantes. Com ele, você pode adicionar pessoas, produtos (compartilhados ou individuais), calcular automaticamente quanto cada um deve pagar e compartilhar o resultado de forma simples.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
 
-## Expanding the ESLint configuration
+- Cadastro de pessoas participantes do happy hour
+- Adição de produtos/itens, com opção de marcar como compartilhado ou individual
+- Cálculo automático do valor total e do valor individual de cada pessoa
+- Interface responsiva e otimizada para dispositivos móveis
+- Compartilhamento do resultado via Web Share API ou download em arquivo `.txt`
+- Visualização clara dos produtos compartilhados e individuais
+- Remoção e edição de pessoas e produtos em tempo real
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Zustand](https://zustand-demo.pmnd.rs/) (gerenciamento de estado)
+- [Tailwind CSS](https://tailwindcss.com/) (estilização)
+- [Lucide Icons](https://lucide.dev/) (ícones)
+- [Vite](https://vitejs.dev/) (build tool)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Instalação
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone o repositório:**
+   ```bash
+   git clone git@github.com:dennerrondinely/QuemPagou.git
+   cd QuemPagou
+   ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+
+3. **Rode o projeto localmente:**
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
+
+4. **Acesse no navegador:**
+   ```
+   http://localhost:5173
+   ```
+
+## 📱 Uso
+
+1. Crie um novo happy hour.
+2. Adicione as pessoas participantes.
+3. Adicione os produtos, escolhendo se são compartilhados ou individuais.
+4. Veja o resumo dos valores e compartilhe o resultado!
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues, enviar pull requests ou sugerir melhorias.
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+> Feito com 💜 por [Denner Rondinely](https://github.com/dennerrondinely)
